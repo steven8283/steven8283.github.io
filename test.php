@@ -9,6 +9,7 @@
 PHP program received
 <?php
 echo $_POST["input_text"];
+echo "2 is an even number.\n"
 ?>
 
 </body>
