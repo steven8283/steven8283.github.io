@@ -52,10 +52,16 @@ body, html {
 }
 
 .headStyles {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display', serif;;
     text-align: left;
     font-size: 40px;
     font-weight: bold;
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    padding: 15px;
 }
 
 p {
