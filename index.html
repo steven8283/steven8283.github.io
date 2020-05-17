@@ -6,6 +6,8 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" href="styles.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"> 
         <!-- ScrollReveal v3.3.6 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
@@ -16,9 +18,10 @@
 
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
-        <a href="#about">About</a>
+        <a href="./test.php">About</a>
         <a href="#works">Works</a>
         <a href="#contact">Contact</a>
+        <a href="./author.html">Jane Eyre</a>
     </div>
 
     <body>
@@ -45,12 +48,19 @@
                 font-size: 50px;
                 line-height: 300px;
                 text-align: center;
+                font-family: 'Jost', sans-serif;
+                transition: height 5s, line-height 5s;
+            }
+
+            .grid:hover {
+                height: 400px;
+                line-height: 400px;
             }
         </style>
 
-        <div class="grid"> This is to test the function of ScrollReveal.</div>
-        <div class="grid"> 2 </div>
-        <div class="grid"> 3 </div>
+        <div class="grid"> Teddy </div>
+        <div class="grid"> is </div>
+        <div class="grid"> native dog. </div>
         <div class="grid"> 4 </div>
         <div class="grid"> 5 </div>
 

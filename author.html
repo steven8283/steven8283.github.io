@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jane Eyre</title>
+
+    <link rel="stylesheet" href="authorStyles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #navbar {
+        background-color: #333;
+        position: fixed;
+        top: -100px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        z-index: 9999;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a.logo {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'Dancing Script', cursive;
+      }
+
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+
+    <div id="navbar">
+      <a href="#top" class="logo">Jane Eyre</a> 
+      <a href="#introduction">Introduction</a>
+      <a href="#works">Works of Charlotte Bronte</a>
+      <a href="#bibliography">Bibliography</a>
+    </div>
+
+  </head>
+
+  <body>
+
+    <div id="top" class="janeEyre">
+      <h1 class="janeEyreTitle">Jane Eyre</h1>
+      <!-- <div>
+        <a href="#introduction">Introduction</a>
+        <a href="#works">Works of Charlotte Bronte</a>
+        <a href="#bibliography">Bibliography</a>
+      </div> -->
+    </div>
+    
+    <div class="container">
+      <div class="row">        
+        <!-- Main Contents -->
+        <div class="col-lg">
+
+          <div id="contentRow" class="row" style="padding: 30px;">
+
+            <h2 id="introduction" class="headStyles">
+              <strong>About Jane Eyre</strong>
+            </h2>
+
+            <h3 style="text-align: center;">
+                <strong>
+                  Charlotte Brontë’s romantic gothic novel, 
+                  featuring one of literature’s most memorable heroines.
+                </strong>          
+            </h3>
+
+            <p class="content">
+              With her 1847 novel, Jane Eyre, 
+              Charlotte Brontë created one of the most unforgettable heroines of all time. 
+              Jane Eyre is an orphan, penniless and plain, but full of courage and spirit. 
+              She has endured incredible hardship to secure her humble status as a governess in the household of her brooding employer, 
+              Mr. Rochester. 
+              Jane’s sharp wit and defiant nature meet with Rochester’s sardonic temperament. 
+              The two become enmeshed in a deep, intense bond. 
+              But Rochester has a terrible secret—a remnant from his past that could threaten any hope of happiness with his only love.
+            </p>
+            <p class="content">
+              An unconventional love story that broadened the scope of romantic fiction, 
+              Jane Eyre is ultimately the tale of one woman’s fight to claim her independence and self-respect in a society that has no place for her.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="janeEyre2"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div id="contentRow" class="row" style="padding: 20px;">
+
+            <h2 id="works" class="headStyles">Works of Charlotte Bronte</h2>
+      
+            <p class="content">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onscroll = scrollFunction;
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+      }
+    </script>
+  </body>
+</html>
