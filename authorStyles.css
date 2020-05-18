@@ -30,7 +30,7 @@ body, html {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 50%;
+    height: 70%;
 }
 
 #janeDiv {
@@ -85,4 +85,69 @@ ul.li {
     text-decoration: none;
     font-size: 30px;
     color: white;
+}
+
+.boxShadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.footerContent {
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 15px;
+}
+
+/* textFadeIn */
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
 }

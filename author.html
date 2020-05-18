@@ -66,7 +66,7 @@
       }
     </style>
 
-    <div id="navbar">
+    <div class="container-fluid" id="navbar">
       <a href="#top" class="logo">Jane Eyre</a> 
       <a href="#introduction">Introduction</a>
       <a href="#works">Works of Charlotte Bronte</a>
@@ -78,7 +78,7 @@
   <body>
 
     <div id="top" class="janeEyre">
-      <h1 class="janeEyreTitle">Jane Eyre</h1>
+      <h1 class="janeEyreTitle fade-in">Jane Eyre</h1>
       <!-- <div>
         <a href="#introduction">Introduction</a>
         <a href="#works">Works of Charlotte Bronte</a>
@@ -86,21 +86,23 @@
       </div> -->
     </div>
     
-    <div class="container">
+    <div id="introduction" class="container">
       <div class="row">        
         <!-- Main Contents -->
         <div class="col-lg">
 
           <div id="contentRow" class="row" style="padding: 30px;">
 
-            <h2 id="introduction" class="headStyles">
+            <h2 class="headStyles">
               <strong>About Jane Eyre</strong>
             </h2>
 
             <h3 style="text-align: center;">
                 <strong>
+                  <i>
                   Charlotte Brontë’s romantic gothic novel, 
                   featuring one of literature’s most memorable heroines.
+                  </i>
                 </strong>          
             </h3>
 
@@ -148,8 +150,24 @@
       </div>
     </div>
 
+    <footer class="container-fluid" style="background-color: black; height: 100px;">
+      <div class="row">
+        <div class="col-sm footerContent" style="text-align: center;">
+          <p>Website by Steven Shen</p>
+        </div>
+        <div class="col-sm">
+
+        </div>
+      </div>
+    </footer>
+
     <script>
       window.onscroll = scrollFunction;
+      // window.scrollBy({ 
+      //   top: 100, // could be negative value
+      //   left: 0, 
+      //   behavior: 'smooth' 
+      // });
 
       function scrollFunction() {
         if (
