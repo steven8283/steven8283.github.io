@@ -15,8 +15,10 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" 
     rel="stylesheet"
-    /> 
-    <!--  -->
+    />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
       rel="stylesheet"
@@ -64,6 +66,38 @@
         background-color: #ddd;
         color: black;
       }
+
+      #navbar a.active {
+        background-color: rgb(107, 107, 107);
+        color: white;
+      }
+
+      #navbar .icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        #navbar a:not(:first-child) {display: none;}
+        #navbar a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #navbar.responsive {position: relative;}
+        #navbar.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        #navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
     </style>
 
     <div class="container-fluid" id="navbar">
@@ -71,6 +105,9 @@
       <a href="#introduction">Introduction</a>
       <a href="#works">Works of Charlotte Bronte</a>
       <a href="#bibliography">Bibliography</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
   </head>
@@ -177,6 +214,15 @@
           document.getElementById("navbar").style.top = "0";
         } else {
           document.getElementById("navbar").style.top = "-100px";
+        }
+      }
+
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.id ==="navbar")  {
+          x.id += " responsive";
+        } else {
+          x.id = "navbar";
         }
       }
     </script>
