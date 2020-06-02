@@ -12,13 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" 
-    rel="stylesheet"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
     />
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -26,6 +29,9 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
       #navbar {
@@ -46,7 +52,7 @@
         padding: 15px;
         text-decoration: none;
         font-size: 17px;
-        font-family: 'Playfair Display', serif;;
+        font-family: "Playfair Display", serif;
       }
 
       #navbar a.logo {
@@ -59,7 +65,7 @@
         padding-right: 15px;
         text-decoration: none;
         font-size: 25px;
-        font-family: 'Dancing Script', cursive;
+        font-family: "Dancing Script", cursive;
       }
 
       #navbar a:hover {
@@ -77,7 +83,9 @@
       }
 
       @media screen and (max-width: 600px) {
-        #navbar a:not(:first-child) {display: none;}
+        #navbar a:not(:first-child) {
+          display: none;
+        }
         #navbar a.icon {
           float: right;
           display: block;
@@ -85,7 +93,9 @@
       }
 
       @media screen and (max-width: 600px) {
-        #navbar.responsive {position: relative;}
+        #navbar.responsive {
+          position: relative;
+        }
         #navbar.responsive a.icon {
           position: absolute;
           right: 0;
@@ -97,23 +107,23 @@
           text-align: left;
         }
       }
-
     </style>
 
     <div class="container-fluid" id="navbar">
-      <a href="#top" class="logo">Jane Eyre</a> 
-      <a href="#introduction">Introduction</a>
+      <a href="#top" class="logo">Jane Eyre</a>
+      <a href="#introduction">About Jane Eyre</a>
+      <a href="#chars">Characters</a>
+      <a href="#plot">Plot</a>
+      <a href="#author">Charlotte Bronte</a>
       <a href="#works">Works of Charlotte Bronte</a>
-      <a href="#bibliography">Bibliography</a>
+      <a href="#studentWorks">Student Works</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
   </head>
 
   <body>
-
     <div id="top" class="janeEyre">
       <h1 class="janeEyreTitle fade-in">Jane Eyre</h1>
       <!-- <div>
@@ -122,42 +132,42 @@
         <a href="#bibliography">Bibliography</a>
       </div> -->
     </div>
-    
-    <div id="introduction" class="container">
-      <div class="row">        
-        <!-- Main Contents -->
+
+    <div id="introduction" class="container fade">
+      <div class="row">
         <div class="col-lg">
-
           <div id="contentRow" class="row" style="padding: 30px;">
-
             <h2 class="headStyles">
               <strong>About Jane Eyre</strong>
             </h2>
 
             <h3 style="text-align: center;">
-                <strong>
-                  <i>
-                  Charlotte Brontë’s romantic gothic novel, 
-                  featuring one of literature’s most memorable heroines.
-                  </i>
-                </strong>          
+              <strong>
+                <i>
+                  Charlotte Brontë’s romantic gothic novel, featuring one of
+                  literature’s most memorable heroines.
+                </i>
+              </strong>
             </h3>
 
             <p class="content">
-              With her 1847 novel, Jane Eyre, 
-              Charlotte Brontë created one of the most unforgettable heroines of all time. 
-              Jane Eyre is an orphan, penniless and plain, but full of courage and spirit. 
-              She has endured incredible hardship to secure her humble status as a governess in the household of her brooding employer, 
-              Mr. Rochester. 
-              Jane’s sharp wit and defiant nature meet with Rochester’s sardonic temperament. 
-              The two become enmeshed in a deep, intense bond. 
-              But Rochester has a terrible secret—a remnant from his past that could threaten any hope of happiness with his only love.
+              With her 1847 novel, Jane Eyre, Charlotte Brontë created one of
+              the most unforgettable heroines of all time. Jane Eyre is an
+              orphan, penniless and plain, but full of courage and spirit. She
+              has endured incredible hardship to secure her humble status as a
+              governess in the household of her brooding employer, Mr.
+              Rochester. Jane’s sharp wit and defiant nature meet with
+              Rochester’s sardonic temperament. The two become enmeshed in a
+              deep, intense bond. But Rochester has a terrible secret—a remnant
+              from his past that could threaten any hope of happiness with his
+              only love.
             </p>
             <p class="content">
-              An unconventional love story that broadened the scope of romantic fiction, 
-              Jane Eyre is ultimately the tale of one woman’s fight to claim her independence and self-respect in a society that has no place for her.
+              An unconventional love story that broadened the scope of romantic
+              fiction, Jane Eyre is ultimately the tale of one woman’s fight to
+              claim her independence and self-respect in a society that has no
+              place for her.
             </p>
-
           </div>
         </div>
       </div>
@@ -165,45 +175,149 @@
 
     <div class="janeEyre2"></div>
 
-    <div class="container">
-      <div class="row">
+    <div id="chars" class="container" style="padding: 20px;">
+      <div class="row" style="padding: 20px;">
+        <h2 class="headStyles">Characters</h2>
+      </div>
+
+      <div class="row fade" style="padding: 20px;">
+        <div class="col-4">
+          <img src=pics/janeEyreCharPic.jpg class="img-fluid" alt="Responsive image"/>
+        </div>
+        <div class="col-8">
+          <h3 class="headStyles">Jane Eyre</h3>
+          <p class="content">
+            The orphaned protagonist of the story. 
+            When the novel begins, she is an isolated, powerless ten-year-old living with an aunt and cousins who dislike her. 
+            As the novel progresses, she grows in strength. 
+            She distinguishes herself at Lowood School because of her hard work and strong intellectual abilities. 
+            As a governess at Thornfield, she learns of the pleasures and pains of love through her relationship with Edward Rochester. 
+            After being deceived by him, she goes to Marsh End, 
+            where she regains her spiritual focus and discovers her own strength when she rejects St. John River's marriage proposal. 
+            By novel's end she has become a powerful, independent woman, blissfully married to the man she loves, Rochester.
+          </p>
+        </div>
+      </div>
+
+      <div class="row fade" style="padding: 20px;">
+        <div class="col-8">
+          <h3 class="headStyles">Edward Rochester</h3>
+          <p class="content">
+            Jane's lover; a dark, passionate, brooding man. 
+            A traditional romantic hero, Rochester has lived a troubled wife. 
+            Married to an insane Creole woman, Bertha Mason, Rochester sought solace for several years in the arms of mistresses. 
+            Finally, he seeks to purify his life and wants Jane Eyre, the innocent governess he has hired to teach his foster daughter, 
+            Adèle Varens, to become his wife. The wedding falls through when she learns of the existence of his wife. 
+            As penance for his transgressions, he is punished by the loss of an eye and a hand when Bertha sets fire to Thornfield. 
+            He finally gains happiness at the novel's end when he is reunited with Jane.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="pics/Ed. RochesterCharPic.jpg" class="img-fluid" Alt="Responsive image"/>
+        </div>
+      </div>
+
+      <div class="row fade" style="padding: 20px;">
+        <div class="col-4">
+          <img src="pics/St. JohnCharPic.jpg" class="img-fluid" Alt="Responsive image"/>
+        </div>
+        <div class="col-8">
+          <h3 class="headStyles">St. John Rivers</h3>
+          <p class="content">
+            Jane's cousin, St. John is a cold, despotic, excessively zealous. Unhappy with his humble position as the minister at Morton, St. John wants to become a missionary in order to meet his ambitions for power and glory. St. John tries to force Jane to marry him and move to India. Jane resists him, and he spends the rest of his life furthering British colonialism by forcing Christian values on the natives.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallaxImg" style="min-height: 70%;">
+      <img src="https://via.placeholder.com/1903x1080" />
+    </div>
+
+    <div id="plot" class="container" style="padding: 20px;">
+      <div class="row" style="padding: 20px;">
+        <h2 class="headStyles">Plot</h2>
+      </div>
+
+      <div id="plotContent" class="row" style="padding: 20px;">
+        <p class="content">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </div>
+
+    <div class="parallaxImg" style="min-height: 70%;">
+      <img src="https://via.placeholder.com/1903x1080" />
+    </div>
+
+    <div id="author" class="container">
+      <div class="row" style="padding: 30px;">
         <div class="col-lg">
           <div id="contentRow" class="row" style="padding: 20px;">
+            <h2 class="headStyles">The Author: Charlotte Bronte</h2>
 
-            <h2 id="works" class="headStyles">Works of Charlotte Bronte</h2>
-      
             <p class="content">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum."
-              </p>
-      
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="container-fluid" style="background-color: black; height: 100px;">
-      <div class="row">
-        <div class="col-sm footerContent" style="text-align: center;">
-          <p>Website by Steven Shen</p>
-        </div>
-        <div class="col-sm">
+    <div class="parallaxImg" style="min-height: 70%;">
+      <img src="https://via.placeholder.com/1903x1080" />
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div id="contentRow" class="row" style="padding: 20px;">
+            <h2 id="works" class="headStyles">Works of Charlotte Bronte</h2>
+
+            <p class="content">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="container-fluid"
+      style="background-color: black; height: 100px;"
+    >
+      <div class="row">
+        <div class="col-sm footerContent" style="text-align: left;">
+          <p>Website by Steven Shen</p>
         </div>
       </div>
     </footer>
 
     <script>
       window.onscroll = scrollFunction;
-      // window.scrollBy({ 
+      // window.scrollBy({
       //   top: 100, // could be negative value
-      //   left: 0, 
-      //   behavior: 'smooth' 
+      //   left: 0,
+      //   behavior: 'smooth'
       // });
 
       function scrollFunction() {
@@ -219,12 +333,38 @@
 
       function myFunction() {
         var x = document.getElementById("navbar");
-        if (x.id ==="navbar")  {
+        if (x.id === "navbar") {
           x.id += " responsive";
         } else {
           x.id = "navbar";
         }
       }
+
+      $(window).on("load", function () {
+        $(window)
+          .scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function () {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) {
+                //object comes into view (scrolling down)
+                if ($(this).css("opacity") == 0) {
+                  $(this).fadeTo(500, 1);
+                }
+              // } else {
+              //   //object goes out of view (scrolling up)
+              //   if ($(this).css("opacity") == 1) {
+              //     $(this).fadeTo(500, 0);
+              //   }
+              // }
+              }
+            });
+          })
+          .scroll(); //invoke scroll-handler on page-load
+      });
     </script>
   </body>
 </html>

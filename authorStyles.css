@@ -13,6 +13,15 @@ body, html {
     position: relative;
 }
 
+.parallaxImg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100%;
+}
+
 .janeEyre {
     background-image: url('pics/main.jpg');
     background-repeat: no-repeat;
@@ -31,6 +40,11 @@ body, html {
     background-position: center;
     position: relative;
     height: 70%;
+}
+
+.fade {
+  background-color: transparent;
+  opacity: 1;
 }
 
 #janeDiv {
