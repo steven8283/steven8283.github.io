@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 
+<!-- 
+
+ ______     __  __        ______     ______   ______     __   __   ______     __   __        ______     __  __     ______     __   __    
+/\  == \   /\ \_\ \      /\  ___\   /\__  _\ /\  ___\   /\ \ / /  /\  ___\   /\ "-.\ \      /\  ___\   /\ \_\ \   /\  ___\   /\ "-.\ \   
+\ \  __<   \ \____ \     \ \___  \  \/_/\ \/ \ \  __\   \ \ \'/   \ \  __\   \ \ \-.  \     \ \___  \  \ \  __ \  \ \  __\   \ \ \-.  \  
+ \ \_____\  \/\_____\     \/\_____\    \ \_\  \ \_____\  \ \__|    \ \_____\  \ \_\\"\_\     \/\_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\ 
+  \/_____/   \/_____/      \/_____/     \/_/   \/_____/   \/_/      \/_____/   \/_/ \/_/      \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/ 
+                                                                                                                                                                                                                                                      
+ -->
+
 <html>
   <head>
     <title>Jane Eyre</title>
@@ -23,6 +33,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -30,8 +41,28 @@
       crossorigin="anonymous"
     />
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Plugins -->
+
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Tiny Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <style>
       #navbar {
@@ -124,77 +155,100 @@
   </head>
 
   <body>
-    <div id="top" class="janeEyre">
+    <div id="top" class="container-fluid janeEyre">
       <h1 class="janeEyreTitle fade-in">Jane Eyre</h1>
-      <!-- <div>
-        <a href="#introduction">Introduction</a>
-        <a href="#works">Works of Charlotte Bronte</a>
-        <a href="#bibliography">Bibliography</a>
-      </div> -->
+      <!-- <video autoplay muted loop id="myVideo" class="fullscreen-bg_video">
+        <source src="pics/Jane Eyre - Official Trailer.mp4" type="video/mp4">
+      </video> -->
     </div>
 
-    <div id="introduction" class="container fade">
+    <!-- About Jane Eyre -->
+    <div id="introduction" class="container" style="padding: 20px;">
       <div class="row">
         <div class="col-lg">
-          <div id="contentRow" class="row" style="padding: 30px;">
-            <h2 class="headStyles">
-              <strong>About Jane Eyre</strong>
-            </h2>
-
-            <h3 style="text-align: center;">
-              <strong>
-                <i>
-                  Charlotte Brontë’s romantic gothic novel, featuring one of
-                  literature’s most memorable heroines.
-                </i>
-              </strong>
-            </h3>
-
-            <p class="content">
-              With her 1847 novel, Jane Eyre, Charlotte Brontë created one of
-              the most unforgettable heroines of all time. Jane Eyre is an
-              orphan, penniless and plain, but full of courage and spirit. She
-              has endured incredible hardship to secure her humble status as a
-              governess in the household of her brooding employer, Mr.
-              Rochester. Jane’s sharp wit and defiant nature meet with
-              Rochester’s sardonic temperament. The two become enmeshed in a
-              deep, intense bond. But Rochester has a terrible secret—a remnant
-              from his past that could threaten any hope of happiness with his
-              only love.
-            </p>
-            <p class="content">
-              An unconventional love story that broadened the scope of romantic
-              fiction, Jane Eyre is ultimately the tale of one woman’s fight to
-              claim her independence and self-respect in a society that has no
-              place for her.
-            </p>
-          </div>
+          <h2 class="headStyles" style="padding: 30px;">
+            <strong>About Jane Eyre</strong><br />
+          </h2>
         </div>
       </div>
+
+      <div class="row text-center">
+        <div class="col imageContainer">
+          <img src="pics/janeEyreBookCover.jpg" alt="Responsive image" />
+        </div>
+      </div>
+
+      <div id="contentRow" class="row" style="padding: 30px;">
+        <h3 style="text-align: center;">
+          <strong>
+            <i>
+              Charlotte Brontë’s romantic gothic novel, featuring one of
+              literature’s most memorable heroines.
+            </i>
+          </strong>
+        </h3>
+        <p class="content">
+          With her 1847 novel, Jane Eyre, Charlotte Brontë created one of the
+          most unforgettable heroines of all time. Jane Eyre is an orphan,
+          penniless and plain, but full of courage and spirit. She has endured
+          incredible hardship to secure her humble status as a governess in the
+          household of her brooding employer, Mr. Rochester. Jane’s sharp wit
+          and defiant nature meet with Rochester’s sardonic temperament. The two
+          become enmeshed in a deep, intense bond. But Rochester has a terrible
+          secret—a remnant from his past that could threaten any hope of
+          happiness with his only love.
+        </p>
+        <p class="content">
+          An unconventional love story that broadened the scope of romantic
+          fiction, Jane Eyre is ultimately the tale of one woman’s fight to
+          claim her independence and self-respect in a society that has no place
+          for her.
+        </p>
+        <p class="content">
+          Jane Eyre calls into question most of society's major institutions,
+          including education, family, social class, and Christianity. The novel
+          asks the reader to consider a variety of contemporary social and
+          political issues: What is women's position in society, what is the
+          relation between Britain and its colonies, how important is artistic
+          endeavor in human life, what is the relationship of dreams and fantasy
+          to reality, and what is the basis of an effective marriage? Although
+          the novel poses all of these questions, it doesn't didactically offer
+          a single answer to any of them. Readers can construct their own
+          answers, based on their unique and personal analyses of the book. This
+          multidimensionality makes Jane Eyre a novel that rewards multiple
+          readings.
+        </p>
+      </div>
     </div>
+    <!-- /About Jane Eyre -->
 
     <div class="janeEyre2"></div>
 
+    <!-- Characters -->
     <div id="chars" class="container" style="padding: 20px;">
       <div class="row" style="padding: 20px;">
         <h2 class="headStyles">Characters</h2>
       </div>
 
       <div class="row fade" style="padding: 20px;">
-        <div class="col-4">
-          <img src=pics/janeEyreCharPic.jpg class="img-fluid" alt="Responsive image"/>
+        <div class="col-4 imageContainer">
+          <img src=pics/janeEyreCharPic.jpg class="img-fluid" alt="Responsive
+          image"/>
         </div>
         <div class="col-8">
           <h3 class="headStyles">Jane Eyre</h3>
           <p class="content">
-            The orphaned protagonist of the story. 
-            When the novel begins, she is an isolated, powerless ten-year-old living with an aunt and cousins who dislike her. 
-            As the novel progresses, she grows in strength. 
-            She distinguishes herself at Lowood School because of her hard work and strong intellectual abilities. 
-            As a governess at Thornfield, she learns of the pleasures and pains of love through her relationship with Edward Rochester. 
-            After being deceived by him, she goes to Marsh End, 
-            where she regains her spiritual focus and discovers her own strength when she rejects St. John River's marriage proposal. 
-            By novel's end she has become a powerful, independent woman, blissfully married to the man she loves, Rochester.
+            The orphaned protagonist of the story. When the novel begins, she is
+            an isolated, powerless ten-year-old living with an aunt and cousins
+            who dislike her. As the novel progresses, she grows in strength. She
+            distinguishes herself at Lowood School because of her hard work and
+            strong intellectual abilities. As a governess at Thornfield, she
+            learns of the pleasures and pains of love through her relationship
+            with Edward Rochester. After being deceived by him, she goes to
+            Marsh End, where she regains her spiritual focus and discovers her
+            own strength when she rejects St. John River's marriage proposal. By
+            novel's end she has become a powerful, independent woman, blissfully
+            married to the man she loves, Rochester.
           </p>
         </div>
       </div>
@@ -203,116 +257,714 @@
         <div class="col-8">
           <h3 class="headStyles">Edward Rochester</h3>
           <p class="content">
-            Jane's lover; a dark, passionate, brooding man. 
-            A traditional romantic hero, Rochester has lived a troubled wife. 
-            Married to an insane Creole woman, Bertha Mason, Rochester sought solace for several years in the arms of mistresses. 
-            Finally, he seeks to purify his life and wants Jane Eyre, the innocent governess he has hired to teach his foster daughter, 
-            Adèle Varens, to become his wife. The wedding falls through when she learns of the existence of his wife. 
-            As penance for his transgressions, he is punished by the loss of an eye and a hand when Bertha sets fire to Thornfield. 
-            He finally gains happiness at the novel's end when he is reunited with Jane.
+            Jane's lover; a dark, passionate, brooding man. A traditional
+            romantic hero, Rochester has lived a troubled wife. Married to an
+            insane Creole woman, Bertha Mason, Rochester sought solace for
+            several years in the arms of mistresses. Finally, he seeks to purify
+            his life and wants Jane Eyre, the innocent governess he has hired to
+            teach his foster daughter, Adèle Varens, to become his wife. The
+            wedding falls through when she learns of the existence of his wife.
+            As penance for his transgressions, he is punished by the loss of an
+            eye and a hand when Bertha sets fire to Thornfield. He finally gains
+            happiness at the novel's end when he is reunited with Jane.
           </p>
         </div>
-        <div class="col-4">
-          <img src="pics/Ed. RochesterCharPic.jpg" class="img-fluid" Alt="Responsive image"/>
+        <div class="col-4 imageContainer">
+          <img
+            src="pics/Ed. RochesterCharPic.jpg"
+            class="img-fluid"
+            alt="Responsive image"
+          />
         </div>
       </div>
 
       <div class="row fade" style="padding: 20px;">
-        <div class="col-4">
-          <img src="pics/St. JohnCharPic.jpg" class="img-fluid" Alt="Responsive image"/>
+        <div class="col-4 imageContainer">
+          <img
+            src="pics/St. JohnCharPic.jpg"
+            class="img-fluid"
+            alt="Responsive image"
+          />
         </div>
         <div class="col-8">
           <h3 class="headStyles">St. John Rivers</h3>
           <p class="content">
-            Jane's cousin, St. John is a cold, despotic, excessively zealous. Unhappy with his humble position as the minister at Morton, St. John wants to become a missionary in order to meet his ambitions for power and glory. St. John tries to force Jane to marry him and move to India. Jane resists him, and he spends the rest of his life furthering British colonialism by forcing Christian values on the natives.
+            Jane's cousin, St. John is a cold, despotic, excessively zealous.
+            Unhappy with his humble position as the minister at Morton, St. John
+            wants to become a missionary in order to meet his ambitions for
+            power and glory. St. John tries to force Jane to marry him and move
+            to India. Jane resists him, and he spends the rest of his life
+            furthering British colonialism by forcing Christian values on the
+            natives.
           </p>
         </div>
       </div>
     </div>
+    <!-- /Characters -->
 
-    <div class="parallaxImg" style="min-height: 70%;">
-      <img src="https://via.placeholder.com/1903x1080" />
-    </div>
+    <!-- Parallax Pic -->
+    <div
+      class="parallaxImg"
+      style="
+        background-image: url('pics/janeAndRochesterBackground1.jpg');
+        min-height: 90%;
+      "
+    ></div>
 
+    <!-- Plot -->
     <div id="plot" class="container" style="padding: 20px;">
       <div class="row" style="padding: 20px;">
         <h2 class="headStyles">Plot</h2>
       </div>
 
       <div id="plotContent" class="row" style="padding: 20px;">
-        <p class="content">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+        <div class="content">
+          <h4>The novel goes through five distinct stages:</h4>
+          <br />
+          1. Jane’s childhood at Gateshead, where she is abused by her aunt and
+          cousins.<br />
+          2. Her education at Lowood School, where she acquires friends and role
+          models but also suffers privations.<br />
+          3. Her time as governess Thornfield Manor, where she falls in love
+          with her Byronic employer, Edward Rochester.<br />
+          4. Her time with the Rivers family at Marsh’s End and at Morton, where
+          her cold clergyman - cousin St. John Rivers proposes to her.<br />
+          5. Her reunion with and marriage to her beloved Rochester at his house
+          in Ferndean.
+        </div>
+      </div>
+
+      <div id="plotContent" class="row" style="padding: 20px;">
+        <!-- Part 1 Collapsible -->
+        <button type="button" class="collapsible">Part 1</button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            Jane Eyre is a young orphan being raised by Mrs. Reed, her cruel,
+            wealthy aunt. A servant named Bessie provides Jane with some of the
+            few kindnesses she receives, telling her stories and singing songs
+            to her. One day, as punishment for fighting with her bullying cousin
+            John Reed, Jane’s aunt imprisons Jane in the red-room, the room in
+            which Jane’s Uncle Reed died. While locked in, Jane, believing that
+            she sees her uncle’s ghost, screams and faints. She wakes to find
+            herself in the care of Bessie and the kindly apothecary Mr. Lloyd,
+            who suggests to Mrs. Reed that Jane be sent away to school. To
+            Jane’s delight, Mrs. Reed concurs.
+          </p>
+
+          <div class="row text-center">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/bedroom.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <p class="content" style="padding: 20px;">
+            Once at the Lowood School, Jane finds that her life is far from
+            idyllic. The school’s headmaster is Mr. Brocklehurst, a cruel,
+            hypocritical, and abusive man. Brocklehurst preaches a doctrine of
+            poverty and privation to his students while using the school’s funds
+            to provide a wealthy and opulent lifestyle for his own family. At
+            Lowood, Jane befriends a young girl named Helen Burns, whose strong,
+            martyr like attitude toward the school’s miseries is both helpful
+            and displeasing to Jane.
+          </p>
+
+          <div class="row text-center">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/school.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <br />
+
+          <div class="row text-center">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/school2.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <p class="content" style="padding: 20px;">
+            A massive typhus epidemic sweeps Lowood, and Helen dies of
+            consumption. The epidemic also results in the departure of Mr.
+            Brocklehurst by attracting attention to the insalubrious conditions
+            at Lowood. After a group of more sympathetic gentlemen takes
+            Brocklehurst’s place, Jane’s life improves dramatically. She spends
+            eight more years at Lowood, six as a student and two as a teacher.
+          </p>
+        </div>
+        <!-- /Part 1 Collapsible -->
+
+        <!-- Part 2 Collapsible -->
+        <button type="button" class="collapsible">Part 2</button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            After teaching for two years, Jane yearns for new experiences. She
+            accepts a governess position at a manor called Thornfield, where she
+            teaches a lively French girl named Adèle. The distinguished
+            housekeeper Mrs. Fairfax presides over the estate. Jane’s employer
+            at Thornfield is a dark, impassioned man named Rochester, with whom
+            Jane finds herself falling secretly in love. She saves Rochester
+            from a fire one night, which he claims was started by a drunken
+            servant named Grace Poole. But because Grace Poole continues to work
+            at Thornfield, Jane concludes that she has not been told the entire
+            story.
+          </p>
+
+          <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/peeking.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/illustration1.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <p class="content" style="padding: 20px;">
+            Jane sinks into despondency when Rochester brings home a beautiful
+            but vicious woman named Blanche Ingram. Jane expects Rochester to
+            propose to Blanche. But Rochester instead proposes to Jane, who
+            accepts almost disbelievingly. The wedding day arrives, and as Jane
+            and Mr. Rochester prepare to exchange their vows, the voice of Mr.
+            Mason cries out that Rochester already has a wife. Mason introduces
+            himself as the brother of that wife—a woman named Bertha. Mr. Mason
+            testifies that Bertha, whom Rochester married when he was a young
+            man in Jamaica, is still alive. Rochester does not deny Mason’s
+            claims, but he explains that Bertha has gone mad. He takes the
+            wedding party back to Thornfield, where they witness the insane
+            Bertha Mason scurrying around on all fours and growling like an
+            animal. Rochester keeps Bertha hidden on the third story of
+            Thornfield and pays Grace Poole to keep his wife under control.
+            Bertha was the real cause of the mysterious fire earlier in the
+            story. Knowing that it is impossible for her to be with Rochester,
+            Jane flees Thornfield.
+          </p>
+
+          <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/dontHesitate.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 3 Collapsible -->
+        <button type="button" class="collapsible">Part 3</button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            Penniless and hungry, Jane is forced to sleep outdoors and beg for
+            food. At last, three siblings who live in a manor alternatively
+            called Marsh End and Moor House take her in. Their names are Mary,
+            Diana, and St. John (pronounced “Sinjin”) Rivers, and Jane quickly
+            becomes friends with them. St. John is a clergyman, and he finds
+            Jane a job teaching at a charity school in Morton. He surprises her
+            one day by declaring that her uncle, John Eyre, has died and left
+            her a large fortune: 20,000 pounds. When Jane asks how he received
+            this news, he shocks her further by declaring that her uncle was
+            also his uncle: Jane and the Riverses are cousins. Jane immediately
+            decides to share her inheritance equally with her three newfound
+            relatives.
+          </p>
+
+          <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/part3_1.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <p class="content" style="padding: 20px;">
+            St. John decides to travel to India as a missionary, and he urges
+            Jane to accompany him—as his wife. Jane agrees to go to India but
+            refuses to marry her cousin because she does not love him. St. John
+            pressures her to reconsider, and she nearly gives in. However, she
+            realizes that she cannot abandon forever the man she truly loves
+            when one night she hears Rochester’s voice calling her name over the
+            moors. Jane immediately hurries back to Thornfield and finds that it
+            has been burned to the ground by Bertha Mason, who lost her life in
+            the fire. Rochester saved the servants but lost his eyesight and one
+            of his hands. Jane travels on to Rochester’s new residence,
+            Ferndean, where he lives with two servants named John and Mary.
+          </p>
+
+          <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="col imageContainer">
+              <img
+                src="pics/Plot/part3_2.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+
+          <p class="content" style="padding: 20px;">
+            At Ferndean, Rochester and Jane rebuild their relationship and soon
+            marry. At the end of her story, Jane writes that she has been
+            married for ten blissful years and that she and Rochester enjoy
+            perfect equality in their life together. She says that after two
+            years of blindness, Rochester regained sight in one eye and was able
+            to behold their first son at his birth.
+          </p>
+        </div>
+        <!-- /Part 3 Collapsible -->
       </div>
     </div>
+    <!-- /Plot -->
 
-    <div class="parallaxImg" style="min-height: 70%;">
-      <img src="https://via.placeholder.com/1903x1080" />
+    <!-- Parallax Pic -->
+    <div
+      class="parallaxImg"
+      style="
+        background-image: url('pics/rochesterBackground1.jpg');
+        min-height: 70%;
+      "
+    ></div>
+
+    <!-- Author -->
+    <div id="author" class="container" style="padding: 20px;">
+      <div class="row" style="padding: 20px;">
+        <h2 class="headStyles">The Author: Charlotte Bronte</h2>
+      </div>
+
+      <div class="row" style="padding: 20px;">
+        <div class="col-4">
+          <img
+            src="pics/Charlotte_Bronte/Charlotte_Brontë.jpg"
+            class="img-fluid"
+            alt="Responsive
+          image"
+          />
+        </div>
+
+        <div class="col-8">
+          <div class="content">
+            <i>Born: </i>April 21, 1816<br />
+            <i>Died: </i>March 31, 1855<br /><br />
+            <i>Birth place: </i>Thornton, England<br />
+            <i>Resting place: </i>Haworth, England<br /><br />
+            <i>Pen name: </i>Currer Bell<br /><br />
+            <i>Works: </i><br />
+
+            Napoleon and the Spectre" (1833)<br />
+            Poems by Currer, Ellis and Acton Bell (1846)(as Currer Bell)<br />
+            Jane Eyre: An Autobiography (1847) (as Currer Bell)<br />
+            Shirley: A Tale (1849) (as Currer Bell)<br />
+            Villette (1853)<br />
+            The Professor: A Tale (1857)<br />
+          </div>
+        </div>
+      </div>
+
+      <!-- Who Was Charlotte Brontë? -->
+      <div class="row" style="padding: 20px;">
+        <button type="button" class="collapsible">
+          <span style="font-size: 20px;">Who Was Charlotte Brontë?</span>
+        </button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            Charlotte Brontë worked as a teacher and governess before
+            collaborating on a book of poetry with her two sisters, Emily and
+            Anne, who were writers as well. In 1847, Brontë published the
+            semi-autobiographical novel Jane Eyre, which was a hit and would
+            become a literary classic. Her other novels included Shirley and
+            Villette. She died on March 31, 1855, in Haworth, Yorkshire,
+            England.
+          </p>
+
+          <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="col">
+              <img
+                src="pics/Charlotte_Bronte/charlotte_bronte2.jpg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- /Who Was Charlotte Brontë? -->
+
+        <!-- Early Life -->
+        <button type="button" class="collapsible">
+          <span style="font-size: 20px;">Early Life</span>
+        </button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            Brontë was born on April 21, 1816, in Thornton, Yorkshire, England.
+            Said to be the most dominant and ambitious of the Brontës, Charlotte
+            was raised in a strict Anglican home by her clergyman father and a
+            religious aunt after her mother and two eldest siblings died. She
+            and her sister Emily attended the Clergy Daughter's School at Cowan
+            Bridge but were largely educated at home. Though she tried to earn a
+            living as both a governess and a teacher, Brontë missed her sisters
+            and eventually returned home.
+          </p>
+        </div>
+        <!-- /Early Life -->
+
+        <!-- "Jane Eyre" -->
+        <button type="button" class="collapsible">
+          <span style="font-size: 20px;">Jane Eyre</span>
+        </button>
+        <div class="collContent" style="margin-bottom: 10px;">
+          <p class="content" style="padding: 20px;">
+            A writer all her life, Brontë published her first novel, Jane Eyre,
+            in 1847 under the manly pseudonym Currer Bell. Though controversial
+            in its criticism of society's treatment of impoverished women, the
+            book was an immediate hit. She followed the success with Shirley in
+            1848 and Villette in 1853.
+          </p>
+        </div>
+        <!-- /"Jane Eyre" -->
+      </div>
     </div>
+    <!-- /Author -->
 
-    <div id="author" class="container">
-      <div class="row" style="padding: 30px;">
-        <div class="col-lg">
-          <div id="contentRow" class="row" style="padding: 20px;">
-            <h2 class="headStyles">The Author: Charlotte Bronte</h2>
+    <!-- Parallax Pic -->
+    <div
+      class="parallaxImg"
+      style="
+        background-image: url('pics/bronte_background.jpg');
+        min-height: 70%;
+      "
+    ></div>
 
-            <p class="content">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+    <!-- Works of Charlotte Bronte -->
+    <div id="works" class="container" style="padding: 20px;">
+      <div class="row" style="padding: 20px;">
+        <h2 id="works" class="headStyles">Works of Charlotte Bronte</h2>
+      </div>
+      <div class="row" style="padding: 20px;">
+        <div class="col-4">
+          <img
+            src="pics/Works/janeEyreBookCover.jpg"
+            class="img-fluid"
+            alt="Responsive
+          image"
+          />
+        </div>
+        <div class="col-8">
+          <div class="content">
+            <strong>Jane Eyre-- </strong>novel by Charlotte Brontë, first
+            published in 1847 as Jane Eyre: An Autobiography, with Currer Bell
+            (Brontë’s pseudonym) listed as the editor. Widely considered a
+            classic, it gave new truthfulness to the Victorian novel with its
+            realistic portrayal of the inner life of a woman, noting her
+            struggles with her natural desires and social condition.
+          </div>
+          <br />
+          <div class="content">
+            Written as a first-person narrative, the novel follows the plain but
+            intelligent Jane Eyre in her development as an individual from her
+            traumatic childhood. Brontë describes five specific stages of Jane's
+            growth over the course of the novel: first, her childhood among
+            oppressive relatives; second, her time as a student at Lowood
+            School; third, her months as a governess at Thornfield Manor;
+            fourth, her time with her cousins at Marsh's End; and finally, her
+            return to Thornfield Manor and marriage to Mr. Rochester. As a
+            classic example of the Germanic Bildungsroman, or novel of
+            formation, the text demonstrates Jane's attempts to define her
+            identity against forces of opposition in each of these five stages.
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row" style="padding: 20px;">
+        <div class="col-4">
+          <img
+            src="pics/Works/shirleyBookCover.jpg"
+            class="img-fluid"
+            alt="Responsive
+          image"
+          />
+        </div>
+
+        <div class="col-8">
+          <div class="content">
+            <strong>Shirley-- </strong>is a classic historical novel by
+            Charlotte Brontë. Written in 1849 after the overwhelming success of
+            Jane Eyre, the book follows two women from very different social
+            circles who show their communities what women are capable of. The
+            book is generally regarded as Brontë’s most feminist novel, and it
+            is still widely read today. Her biographer called it a
+            “revolutionary” text. Charlotte Brontë was the eldest of the famous
+            Brontë sisters, whose novels are among the highest-regarded in
+            English literature. She was not in good health and died at only
+            thirty-eight while carrying her unborn child.
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row" style="padding: 20px;">
+        <div class="col-4">
+          <img
+            src="pics/Works/VilletteBookCover.jpg"
+            class="img-fluid"
+            alt="Responsive
+          image"
+          />
+        </div>
+        <div class="col-8">
+          <div class="content">
+            <strong>Villette-- </strong>Kate Millet, author of Sexual Politics,
+            wrote of Villette that it was "too subversive to be popular." Mrs.
+            Gaskell, Charlotte Brontë's friend and her first biographer, said
+            that the story of Villette was not as interesting as that of Jane
+            Eyre. The book is not as often read as Jane Eyre, and many readers,
+            even those who admire Brontë, have no idea she wrote more than one
+            novel. Villette often languishes unread on library shelves, attended
+            to only by graduate students or literary scholars.
           </div>
         </div>
       </div>
     </div>
+    <!-- /Works of Charlotte Bronte -->
 
-    <div class="parallaxImg" style="min-height: 70%;">
-      <img src="https://via.placeholder.com/1903x1080" />
-    </div>
+    <div
+      class="parallaxImg"
+      style="
+        background-image: url('pics/janeAndRochesterBackground2.jpg');
+        min-height: 70%;
+      "
+    ></div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <div id="contentRow" class="row" style="padding: 20px;">
-            <h2 id="works" class="headStyles">Works of Charlotte Bronte</h2>
+    <!-- Student Works -->
+    <div id="studentWorks" class="container" style="padding: 20px;">
+      <div class="row" style="padding: 20px;">
+        <h2 class="headStyles">Student Works</h2>
+      </div>
+      <div class="row justify-content-center">
+        <h3 id="subTitle">Jane Eyre "Perfected" Trailer</h3>
+      </div>
+      <div class="row justify-content-center" style="padding: 20px;">
+        <iframe
+          src="https://drive.google.com/file/d/1mrHl77qGOiXBFQSvhaM1zQ9DG9XtZ54m/preview"
+          width="640"
+          height="480"
+        ></iframe>
+      </div>
+      <hr />
 
-            <p class="content">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+      <div class="row justify-content-center" style="padding: 20px;">
+        <iframe src="pics/janeEyrePDF.pdf" height="200" width="300"></iframe>
+      </div>
+      
+      <!-- Doll House Carousel -->
+      <div class="row justify-content-center">
+        <img src="pics/student_works/doll_house/1.jpg" class="img-fluid w-75">
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col">
+          <div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid" src="pics/student_works/doll_house/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/3.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/doll_house/8.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
+        
+      </div>
+
+      <hr>
+
+      <div class="row" style="padding: 20px;">
+        <h2 class="headStyles">Drawings</h2>
+      </div>
+
+      <!-- Drawing Carousel -->
+      <div class="row justify-content-center">
+        <div class="col">
+          <div id="drawingCarousel" class="carousel slide w-50" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#drawingCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#drawingCarousel" data-slide-to="1"></li>
+              <li data-target="#drawingCarousel" data-slide-to="2"></li>
+              <li data-target="#drawingCarousel" data-slide-to="3"></li>
+              <li data-target="#drawingCarousel" data-slide-to="4"></li>
+              <li data-target="#drawingCarousel" data-slide-to="5"></li>
+              <li data-target="#drawingCarousel" data-slide-to="6"></li>
+              <li data-target="#drawingCarousel" data-slide-to="7"></li>
+              <li data-target="#drawingCarousel" data-slide-to="8"></li>
+              <li data-target="#drawingCarousel" data-slide-to="9"></li>
+              <li data-target="#drawingCarousel" data-slide-to="10"></li>
+              <li data-target="#drawingCarousel" data-slide-to="11"></li>
+              <li data-target="#drawingCarousel" data-slide-to="12"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+劉育誠.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 劉育誠</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+朱冠舟.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 朱冠舟</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+李宛容.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 李宛容</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+李宜庭.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 李宜庭</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+林姵含.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 林姵含</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+林芷瑋.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 林芷瑋</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+楊雅雯.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 楊雅雯</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+王杰.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 王杰</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+蔡欣庭.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 蔡欣庭</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+靜汝.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 沈靜汝</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A+黃子馨林詩智.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 劉育誠</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="pics/student_works/drawing/A_Alex.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>by 劉育誠</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#drawingCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#drawingCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
       </div>
     </div>
+    <!-- /Student Works -->
 
     <!-- Footer -->
-    <footer
-      class="container-fluid"
-      style="background-color: black; height: 100px;"
-    >
-      <div class="row">
-        <div class="col-sm footerContent" style="text-align: left;">
-          <p>Website by Steven Shen</p>
+    <footer style="background-color: black; height: 100px;">
+      <div class="container" style="padding: 20px;">
+        <div class="row">
+          <div class="content" style="color: #ddd;">
+            Website Designed by Steven Shen<br>
+          </div>
         </div>
       </div>
     </footer>
 
     <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
       window.onscroll = scrollFunction;
       // window.scrollBy({
       //   top: 100, // could be negative value
@@ -354,17 +1006,33 @@
                 if ($(this).css("opacity") == 0) {
                   $(this).fadeTo(500, 1);
                 }
-              // } else {
-              //   //object goes out of view (scrolling up)
-              //   if ($(this).css("opacity") == 1) {
-              //     $(this).fadeTo(500, 0);
-              //   }
-              // }
+                // } else {
+                //   //object goes out of view (scrolling up)
+                //   if ($(this).css("opacity") == 1) {
+                //     $(this).fadeTo(500, 0);
+                //   }
+                // }
               }
             });
           })
           .scroll(); //invoke scroll-handler on page-load
       });
+
+      // Collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
     </script>
   </body>
 </html>

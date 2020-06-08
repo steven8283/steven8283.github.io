@@ -33,18 +33,84 @@ body, html {
 }
 
 .janeEyre2 {
-    background-image: url('pics/houseFront.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 70%;
+  background-image: url('pics/houseFront.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70%;
+}
+
+.parallaxVideo {
+  min-height: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.parallaxVideo video{
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.imageContainer > img {
+  transition:transform 0.25s ease;
+  z-index: 1000;
+}
+
+.imageContainer > img:hover {
+  -webkit-transform:scale(1.25);
+  transform:scale(1.25);
+  z-index: 1000;
+}
+
+.collapsible {
+  background-color: rgb(230, 230, 230);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2796';
+}
+
+.collContent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: max-height 0.3s ease-out;
 }
 
 .fade {
   background-color: transparent;
   opacity: 1;
+}
+
+.lightbox .img {
+  margin: 10px;
+
 }
 
 #janeDiv {
@@ -65,12 +131,21 @@ body, html {
     margin-bottom: 10px;
 }
 
+#subTitle {
+  font-size: 30px;
+  font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+}
+
 .headStyles {
     font-family: 'Playfair Display', serif;;
     text-align: left;
     font-size: 40px;
     font-weight: bold;
     padding: 15px;
+}
+
+.headStyles p {
+  text-indent: initial;
 }
 
 h3 {
@@ -83,6 +158,11 @@ p {
 }
 
 p.content {
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-size: 20px;
+}
+
+div.content {
     font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
     font-size: 20px;
 }
@@ -114,6 +194,20 @@ ul.li {
     padding: 15px;
 }
 
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-image: none !important;
+  filter: none !important;
+}
+
+
 /* textFadeIn */
 .fade-in {
     animation: fadeIn ease 3s;
@@ -121,7 +215,9 @@ ul.li {
     -moz-animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
-  }@keyframes fadeIn {
+  }
+  
+  @keyframes fadeIn {
     0% {
       opacity:0;
     }
