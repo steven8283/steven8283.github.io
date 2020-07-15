@@ -79,6 +79,10 @@ body, html {
   font-family: Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
 }
 
+.collapsible:focus {
+  outline: none;
+}
+
 .active, .collapsible:hover {
   background-color: #ccc;
 }
